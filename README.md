@@ -34,30 +34,30 @@
 
 <p><strong>Step 1 Create a Virtual Machine on Azure </strong>: I started by logging into the Azure Portal and clicking on "Create a Resource." From there, I selected "Virtual Machine" and named my virtual machine osticket-vm. I chose Windows 10 Pro, Version 22H2 for the image and selected Standard_D2s_v3 (2 vCPUs, 8 GiB memory) for the size. After creating a username and password, I clicked "Review + Create" and deployed the virtual machine.</p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/474e6171-e698-4d18-94c5-deebdd987e5c" height="80%" width="80%" alt="Step 1 Image"/>
+  <img width="1440" src="https://github.com/user-attachments/assets/474e6171-e698-4d18-94c5-deebdd987e5c"/>
 </p>
 
 
 <p><strong>Step 2 Connect to the VM </strong>: Once the VM was deployed, I went to the homepage in Azure and clicked on the VM (osTicket-Lab). This displayed its public IP address, which I used to connect to the VM via Remote Desktop. I opened Remote Desktop Connection and entered the IP address. I then connected to the VM by entering the credentials created in Step 1.</p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b20294b6-96a6-4521-b04e-db5ecdbe1751" height="80%" width="80%" alt="Step 2 Image 1"/>
+  <img width="1440" src="https://github.com/user-attachments/assets/b20294b6-96a6-4521-b04e-db5ecdbe1751"/>
 </p>
 
 
 
 <p><strong>Step 3 Enable IIS and CGI </strong>: I enabled IIS and CGI in the Windows VM by navigating to the Control Panel, selecting "Programs," and clicking "Turn Windows features on or off." I checked the box next to Internet Information Services (IIS) and then enabled CGI under the World Wide Web Services section.</p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ea33be6f-594c-439a-b80d-518a7d85c70e" height="80%" width="80%" alt="Step 3 Image 2"/>
+  <img width="1440" src="https://github.com/user-attachments/assets/ea33be6f-594c-439a-b80d-518a7d85c70e"/>
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4abd9dc4-77fd-4e1b-8a65-7fce73754fec" height="80%" width="80%" alt="Step 3 Image 3"/>
+  <img width="1440" src="https://github.com/user-attachments/assets/4abd9dc4-77fd-4e1b-8a65-7fce73754fec"/>
 </p>
 
 
 
 <p><strong>Step 4 Installing PHP, Rewrite Module, and VC_redist </strong>: I navigated to the `osTicket-Installation-Files` folder on my desktop within the VM and installed PHP Manager for IIS and the Rewrite Module. Next, I created a folder `C:\PHP` and unzipped PHP into it. Finally, I installed the Microsoft Visual C++ Redistributable to ensure all necessary libraries were available.</p>
 <p align="center">
-  <img width="1440" alt="Screenshot 2024-10-01 at 2 49 31 AM" src="https://github.com/user-attachments/assets/8be90b70-8cb5-4679-9ac0-89e6fb3bb23c">
+  <img width="1440" src="https://github.com/user-attachments/assets/8be90b70-8cb5-4679-9ac0-89e6fb3bb23c">
 </p>
 <p align="center">
   <img width="1440" alt="Screenshot 2024-10-01 at 2 50 09 AM" src="https://github.com/user-attachments/assets/17e5b78d-eb3c-438c-a859-190fb386e5fc">
